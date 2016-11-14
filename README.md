@@ -22,6 +22,7 @@ In order to achieve good modularity, the system is composed of three different c
 
 1. `git clone` all the above projects. If you don't like Git, you can also download a zip file (look for the ["clone or download" button in the project's page](docs/dl-zip.png)).
 2. Using your favorite IDE, setup the projects dependencies like so:
+
    ![Project setup](docs/project-setup.png)
 3. Write your code in `HW-Implementation`.
 4. Test your code by running the unit tests of `HW-Tests`. You may add mode tests if you want (we might add more tests too!).
