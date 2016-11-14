@@ -1,0 +1,9 @@
+@startuml
+skinparam backgroundColor transparent
+[HW-Definitions] as defs
+[HW-Implementation] as impl
+[HW-Tests] as test
+test --> defs : compilation
+impl --> defs : compilation
+test --> impl : runtime
+@enduml
