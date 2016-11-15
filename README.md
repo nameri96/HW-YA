@@ -36,7 +36,7 @@ In order to achieve good modularity, the system is composed of three different c
 
 ## FAQ
 ### Will you release a solution code?
-No. We will release the full tests, though, so you can fix your code if we found any bugs.
+No. You will be able to use the test results to fix your code, if we found any bugs.
 ### Why 3 separate projects?
 Creating 2 projects - i.e. merging `HW-Test` and `HW-Definitions` - would create a circular dependency between the unified project and your implementation. We could overcome this using a 2-pass build process, but that would be error-prone (not to mention ugly). We could use a single project, but that would allow you to accidentally change our code and inadvertently create compile issues.
 ### Do I really have to use Git?
