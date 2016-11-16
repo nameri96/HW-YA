@@ -17,15 +17,16 @@ In order to achieve good modularity, the system is composed of three different c
 * **[HW-Tests](https://github.com/BGU-FVM/HW-Tests)** - Where the tests live. The test suite in this project will be used to examine (and grade) your implementation. The source folder contains some [examples](https://github.com/BGU-FVM/HW-Tests/tree/master/src/il/ac/bgu/cs/fvm/examples)
     to help you understand how your implementation is used.
 
-
 ## Project Setup
 
 1. `git clone` all the above projects. If you don't like Git, you can also download a zip file (look for the ["clone or download" button in the project's page](docs/dl-zip.png)).
-2. Using your favorite IDE, setup the projects dependencies like so:
+2. Using your favorite IDE, setup each cloned repository as a project. Then, setup the projects dependencies like so:
 
    ![Project setup](docs/project-setup.png)
+
+    Note: The repos already contain [NetBeans](https://netbeans.org) projects. If you prefer [IntelliJ IDEA](https://www.jetbrains.com/idea/), you can easily setup the projects using `File Menu -> New -> Project from Existing Source...`. If you are using [Eclipse](https://eclipse.org), we've made a [guide](docs/eclipse-setup.md).
 3. Write your code in `HW-Implementation`.
-4. Test your code by running the unit tests of `HW-Tests`. You may add mode tests if you want (we might add more tests too!).
+4. Test your code by running the unit tests of `HW-Tests`. You may add more tests if you want (we might add more tests too!).
 5. Whatever you do, don't change `HW-Definitions`, or your code might not compile with our copy of it. This is a software *engineering* class, points will be deducted on being too smart for your own good (e.g. breaking the automated testing process due to compile errors).
 
 
@@ -45,4 +46,7 @@ No, you can download the zip files and do everything manually. But note that:
 * You'll have to start using a versioning system at some point, and if you haven't done so already, 4th year of software engineering degree is about time. Thank us later.
 
 ### Things don't work
-Please come to Michael receptions hours or set up a meeting by email, in case these hours don't work for you.
+Give it another go, ask other students, or try to identify the problem and search for a solution on-line.
+
+### Things Still Don't Work
+Please contact Michael, or come to his receptions hours. Or set up a meeting by email.
