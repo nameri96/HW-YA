@@ -13,3 +13,6 @@ hs_err_pid*
 /nbproject/private/
 /dist/
 /build/
+
+.DS_Store
+

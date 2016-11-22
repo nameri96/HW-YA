@@ -138,30 +138,30 @@ public class FvmFacadeImpl implements FvmFacade {
     }
 
     @Override
-    public <Sts, Saut, A, P> TransitionSystem<Pair<Sts, Saut>, A, P> product(TransitionSystem<Sts, A, P> ts, Automaton<Saut> aut) {
+    public <Sts, Saut, A, P> TransitionSystem<Pair<Sts, Saut>, A, P> product(TransitionSystem<Sts, A, P> ts, Automaton<Saut, P> aut) {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement product
     }
 
     @Override
-    public TransitionSystem transitionSystemFromChannelSystem(ChannelSystem cs) {
+    public <L, A> TransitionSystem<Pair<List<L>, Map<String, Object>>, A, String> transitionSystemFromChannelSystem(ChannelSystem<L, A> cs) {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement transitionSystemFromChannelSystem
     }
 
     @Override
-    public ProgramGraph programGraphFromNanoPromela(String filename) throws Exception {
+    public ProgramGraph<String, String> programGraphFromNanoPromela(String filename) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement programGraphFromNanoPromela
     }
 
     @Override
-    public ProgramGraph programGraphFromNanoPromelaString(String nanopromela) throws Exception {
+    public ProgramGraph<String, String> programGraphFromNanoPromelaString(String nanopromela) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement programGraphFromNanoPromelaString
     }
 
     @Override
-    public ProgramGraph programGraphFromNanoPromela(InputStream inputStream) throws Exception {
+    public ProgramGraph<String, String> programGraphFromNanoPromela(InputStream inputStream) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement programGraphFromNanoPromela
     }
 
-   
+    
 
 }
