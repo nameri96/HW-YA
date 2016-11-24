@@ -3,5 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/HW-Definitions"/>
+	<classpathentry kind="lib" path="lib/antlr-4.5.1-complete.jar"/>
+	<classpathentry kind="lib" path="lib/org.svvrl.goal.cmd.jar"/>
+	<classpathentry kind="lib" path="lib/org.svvrl.goal.core.jar"/>
+	<classpathentry kind="lib" path="lib/org.svvrl.goal.gui.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
