@@ -2,14 +2,17 @@ package il.ac.bgu.cs.fvm.impl;
 
 import il.ac.bgu.cs.fvm.FvmFacade;
 import il.ac.bgu.cs.fvm.automata.Automaton;
+import il.ac.bgu.cs.fvm.automata.MultiColorAutomaton;
 import il.ac.bgu.cs.fvm.channelsystem.ChannelSystem;
 import il.ac.bgu.cs.fvm.circuits.Circuit;
+import il.ac.bgu.cs.fvm.ltl.LTL;
 import il.ac.bgu.cs.fvm.programgraph.ActionDef;
 import il.ac.bgu.cs.fvm.programgraph.ConditionDef;
 import il.ac.bgu.cs.fvm.programgraph.ProgramGraph;
 import il.ac.bgu.cs.fvm.transitionsystem.AlternatingSequence;
 import il.ac.bgu.cs.fvm.transitionsystem.TransitionSystem;
 import il.ac.bgu.cs.fvm.util.Pair;
+import il.ac.bgu.cs.fvm.verification.VerificationResult;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
@@ -93,12 +96,12 @@ public class FvmFacadeImpl implements FvmFacade {
     }
 
     @Override
-    public <S, A> Set<S> pre(TransitionSystem<S, A, ?> ts, Set<S> c, A a) {
+    public <S, A> Set<S> pre(TransitionSystem<S, A, ?> ts, S s, A a) {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement pre
     }
 
     @Override
-    public <S, A> Set<S> pre(TransitionSystem<S, A, ?> ts, S s, A a) {
+    public <S, A> Set<S> pre(TransitionSystem<S, A, ?> ts, Set<S> c, A a) {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement pre
     }
 
@@ -138,13 +141,13 @@ public class FvmFacadeImpl implements FvmFacade {
     }
 
     @Override
-    public <Sts, Saut, A, P> TransitionSystem<Pair<Sts, Saut>, A, P> product(TransitionSystem<Sts, A, P> ts, Automaton<Saut, P> aut) {
-        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement product
+    public <L, A> TransitionSystem<Pair<List<L>, Map<String, Object>>, A, String> transitionSystemFromChannelSystem(ChannelSystem<L, A> cs) {
+        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement transitionSystemFromChannelSystem
     }
 
     @Override
-    public <L, A> TransitionSystem<Pair<List<L>, Map<String, Object>>, A, String> transitionSystemFromChannelSystem(ChannelSystem<L, A> cs) {
-        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement transitionSystemFromChannelSystem
+    public <Sts, Saut, A, P> TransitionSystem<Pair<Sts, Saut>, A, Saut> product(TransitionSystem<Sts, A, P> ts, Automaton<Saut, P> aut) {
+        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement product
     }
 
     @Override
@@ -162,6 +165,20 @@ public class FvmFacadeImpl implements FvmFacade {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement programGraphFromNanoPromela
     }
 
-    
+    @Override
+    public <S, A, P, Saut> VerificationResult<S> verifyAnOmegaRegularProperty(TransitionSystem<S, A, P> ts, Automaton<Saut, P> aut) {
+        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement verifyAnOmegaRegularProperty
+    }
 
+    @Override
+    public <L> Automaton<?, L> LTL2NBA(LTL<L> ltl) {
+        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement LTL2NBA
+    }
+
+    @Override
+    public <L> Automaton<?, L> GNBA2NBA(MultiColorAutomaton<?, L> mulAut) {
+        throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement GNBA2NBA
+    }
+
+   
 }
