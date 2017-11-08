@@ -131,7 +131,7 @@ public class FvmFacadeImpl implements FvmFacade {
     }
 
     @Override
-    public TransitionSystem<Pair<List<Boolean>, List<Boolean>>, List<Boolean>, Object> transitionSystemFromCircuit(Circuit c) {
+    public TransitionSystem<Pair<Map<String, Boolean>, Map<String, Boolean>>, Map<String, Boolean>, Object> transitionSystemFromCircuit(Circuit c) {
         throw new UnsupportedOperationException("Not supported yet."); // TODO: Implement transitionSystemFromCircuit
     }
 
