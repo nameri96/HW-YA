@@ -1,6 +1,6 @@
 # HW-Implementation
 
-This project is the starting point the practical HW in [Introduction to Formant Verification Methods class](https://www.cs.bgu.ac.il/~intvm171/). This document
+This project is the starting point the practical HW in [Introduction to Formal Verification Methods class](https://www.cs.bgu.ac.il/~intvm181/). This document
 explains how the homework system is built, how to submit your tasks and how they will be tested. So please read carefully.
 
 ## Design Overview
@@ -37,12 +37,16 @@ In order to achieve good modularity, the system is composed of three different c
 
 ## FAQ
 ### Will you release a solution code?
-No. You will be able to use the test results to fix your code, if we found any bugs.
+No. You will be able to use the test results to fix your code, if we find any bugs.
+
 ### Why 3 separate projects?
-Creating 2 projects - i.e. merging `HW-Test` and `HW-Definitions` - would create a circular dependency between the unified project and your implementation. We could overcome this using a 2-pass build process, but that would be error-prone (not to mention ugly). We could use a single project, but that would allow you to accidentally change our code and inadvertently create compile issues.
+Creating 2 projects - i.e. merging `HW-Test` and `HW-Definitions` - would create a circular dependency between the unified project and your
+implementation. We could overcome this using a 2-pass build process, but that would be error-prone (not to mention ugly). We could use a single project,
+but that would allow you to accidentally change our code and inadvertently create compile issues.
+
 ### Do I really have to use Git?
 No, you can download the zip files and do everything manually. But note that:
-* Using Git will make it easier for you to update your copies when we make changes to the central code.
+* Using Git will make it easier for you to update your copies if we make changes to the central code.
 * You'll have to start using a versioning system at some point, and if you haven't done so already, 4th year of software engineering degree is about time. Thank us later.
 
 ### Things don't work
