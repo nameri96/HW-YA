@@ -19,6 +19,8 @@ In order to achieve good modularity, the system is composed of three different c
 
 ## Project Setup
 
+** For this project, use Java 8 (a.k.a. JDK-1.8). Do not use Java 9. **
+
 1. `git clone` all the above projects. If you don't like Git, you can also download a zip file (look for the ["clone or download" button in the project's page](docs/dl-zip.png)).
 2. Using your favorite IDE, setup each cloned repository as a project. Then, setup the projects dependencies like so:
 

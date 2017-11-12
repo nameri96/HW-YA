@@ -1,6 +1,8 @@
 # Setting Up the HW Projects in Eclipse
 
-For the purpose of this guide, we assume you've already cloned/downloaded the projects, as mentioned in [the main guide](../README.md). This guide was written using Eclipse Neon, the latest version at the time of writing.
+For the purpose of this guide, we assume you've already cloned/downloaded the projects, as mentioned in [the main guide](../README.md). This guide was written using Eclipse Neon, and was verified to work with Eclipse Oxygen.
+
+** USE JAVA 8 (JDK 1.8) WHEN CHOOSING THE JDK FOR THE PROJECTS CREATED HERE **
 
 1. From the `new` button/menu, choose `project...`
 
@@ -16,7 +18,7 @@ For the purpose of this guide, we assume you've already cloned/downloaded the pr
 
   Once you've unchecked the box, locate the top-level folder of the project, by clicking the `browse` button and selecting the folder:
 
-    ![Select "Java Project"](eclipse4.png)
+  ![Select "Java Project"](eclipse4.png)
 
   click `Next`
 
