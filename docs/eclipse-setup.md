@@ -2,7 +2,7 @@
 
 For the purpose of this guide, we assume you've already cloned/downloaded the projects, as mentioned in [the main guide](../README.md). This guide was written using Eclipse Neon, and was verified to work with Eclipse Oxygen.
 
-** USE JAVA 8 (JDK 1.8) WHEN CHOOSING THE JDK FOR THE PROJECTS CREATED HERE **
+**USE JAVA 8 (JDK 1.8) WHEN CHOOSING THE JDK FOR THE PROJECTS CREATED HERE**
 
 1. From the `new` button/menu, choose `project...`
 
